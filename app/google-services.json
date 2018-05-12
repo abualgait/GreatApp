@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "470744461371",
+    "firebase_url": "https://greatapp-48c11.firebaseio.com",
+    "project_id": "greatapp-48c11",
+    "storage_bucket": "greatapp-48c11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:470744461371:android:f0dea706fa8fafa7",
+        "android_client_info": {
+          "package_name": "com.abualgait.abual.greatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "470744461371-27cighnsgqjdcejtqmaqrh8ortihfmbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCZtVCta1kEVUhMbsU6VyNkd88B0pUcpWQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

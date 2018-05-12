@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Verfication">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:titleTextColor="@android:color/white" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ImageView
+            android:id="@+id/sms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="66dp"
+            android:scaleType="center"
+            android:src="@drawable/sms" />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sms"
+            android:layout_marginTop="60dp"
+            android:text="OTP has been sent to you on your mobile phone.please enter it below"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:id="@+id/codes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/code1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/code2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/code3"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/code4"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/code5"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/code6"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/verify"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/codes"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:background="@color/transparent"
+            android:text="VERIFY" />
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
